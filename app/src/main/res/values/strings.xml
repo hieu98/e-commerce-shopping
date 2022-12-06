@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">E-Commerce Shopping</string>
+    <string name="text_splash">Find your\nGadget</string>
+    <string name="btn_start">Get Started</string>
+</resources>
