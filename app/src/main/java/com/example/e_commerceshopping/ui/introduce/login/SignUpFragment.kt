@@ -1,35 +1,31 @@
 package com.example.e_commerceshopping.ui.introduce.login
 
+import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import com.example.e_commerceshopping.R
 import com.example.e_commerceshopping.base.ui.BaseFragment
-import com.example.e_commerceshopping.databinding.FragmentLoginBinding
+import com.example.e_commerceshopping.databinding.FragmentSignUpBinding
 import com.example.e_commerceshopping.extension.onClick
 import com.example.e_commerceshopping.ui.MainActivity
 
-class LoginFragment : BaseFragment<FragmentLoginBinding, MainActivity>() {
+class SignUpFragment : BaseFragment<FragmentSignUpBinding, MainActivity>(){
     override fun onInflateView(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentLoginBinding = FragmentLoginBinding.inflate(inflater)
+    ): FragmentSignUpBinding = FragmentSignUpBinding.inflate(inflater)
 
     override fun setupView() {
         binding.apply {
             showBottomNav(false)
 
-            btnLogin.onClick {
-                navigateTo(
-                    R.id.action_loginFragment_to_homeFragment,
-                    null,
-                    R.id.nav_home,
-                    false
-                )
-            }
+            btnBackLogin.onClick { popBackStack() }
 
-            btnCreateAccoutn.onClick {
+            btnSignup.onClick {
                 navigateTo(
-                    R.id.action_loginFragment_to_signUpFragment,
+                    R.id.action_signUpFragment_to_homeFragment,
                     null,
                     R.id.nav_home,
                     false
@@ -39,7 +35,5 @@ class LoginFragment : BaseFragment<FragmentLoginBinding, MainActivity>() {
     }
 
     override fun setupData() {
-
     }
-
 }

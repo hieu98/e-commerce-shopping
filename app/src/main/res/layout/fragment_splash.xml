@@ -15,9 +15,10 @@
         android:textColor="@color/white"
         android:textSize="60sp"
         android:textStyle="bold"
+        android:fontFamily="@font/raleway"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_splash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

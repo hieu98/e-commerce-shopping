@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">E-Commerce Shopping</string>
+
     <string name="text_splash">Find your\nGadget</string>
     <string name="btn_start">Get Started</string>
+
+    <string name="text_title_login">Welcome\nback</string>
+    <string name="text_login">Login</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_forgot">Forgot password?</string>
+    <string name="text_create_account">Create account</string>
+    <string name="text_signup">Sign Up</string>
+    <string name="text_repeat_password">Repeat Password</string>
+
+    <string name="profile">Profile</string>
+    <string name="my_order">My orders</string>
+    <string name="favorite">Favorites</string>
+    <string name="delivery">Delivery</string>
+    <string name="setting">Settings</string>
+    <string name="signout">Sign out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

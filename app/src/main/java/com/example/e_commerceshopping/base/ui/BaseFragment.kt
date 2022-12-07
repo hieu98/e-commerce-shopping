@@ -162,6 +162,14 @@ abstract class BaseFragment<B : ViewBinding, A : Any?> : Fragment() {
         findNavController().navigate(id, bundle, options.build())
     }
 
+    fun popBackStack(id: Int? = null, isInclusive: Boolean? = null) {
+        if (id == null || isInclusive == null) {
+            findNavController().popBackStack()
+            return
+        }
+        findNavController().popBackStack(id, isInclusive)
+    }
+
     @CallSuper
     override fun onDestroyView() {
         super.onDestroyView()

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_login">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -19,15 +20,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Welcome\nback"
+        android:text="@string/text_title_login"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -43,7 +42,7 @@
             android:id="@+id/txt_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/text_login"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +57,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_login">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_email" />
@@ -68,18 +67,21 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:text="Email"
+                android:text="@string/text_email"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="17sp"
-            app:layout_constraintTop_toBottomOf="@+id/ln_email" />
+            android:maxLines="1"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/ln_email"
+            tools:ignore="TextFields" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/ln_password"
@@ -90,7 +92,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_email">
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_password" />
@@ -100,27 +102,36 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:text="Password"
+                android:text="@string/text_password"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="17sp"
             android:inputType="textPassword"
+            app:endIconDrawable="@drawable/ic_show_hide_password"
+            app:endIconMode="password_toggle"
             android:drawableEnd="@color/purple_200"
-            app:layout_constraintTop_toBottomOf="@+id/ln_password" />
+            app:layout_constraintTop_toBottomOf="@+id/ln_password" >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtext_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/txt_forgot_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Forgot password?"
+            android:text="@string/text_forgot"
             android:textColor="@color/background_login"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -135,7 +146,8 @@
             android:background="@drawable/border_button_login"
             android:paddingHorizontal="100dp"
             android:paddingVertical="20dp"
-            android:text="Login"
+            android:text="@string/text_login"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_forgot_password" />
@@ -145,7 +157,7 @@
             android:textSize="17sp"
             android:id="@+id/btn_create_accoutn"
             android:textColor="@color/background_login"
-            android:text="Create account"
+            android:text="@string/text_create_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"

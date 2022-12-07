@@ -7,10 +7,10 @@ import com.example.e_commerceshopping.base.ui.BaseFragment
 import com.example.e_commerceshopping.databinding.FragmentSplashBinding
 import com.example.e_commerceshopping.extension.onClick
 import com.example.e_commerceshopping.ui.MainActivity
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.android.ext.android.inject
 
 class SplashFragment : BaseFragment<FragmentSplashBinding, MainActivity>() {
-    private val viewModel: SplashViewModel by viewModel()
+    private val viewModel: SplashViewModel by inject()
 
     override fun onInflateView(
         inflater: LayoutInflater,
