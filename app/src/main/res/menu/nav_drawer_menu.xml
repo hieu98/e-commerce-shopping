@@ -3,23 +3,23 @@
     <group>
         <item
             android:id="@+id/nav_left_profile"
-            android:icon="@drawable/ic_user"
+            android:icon="@drawable/ic_user_unselect"
             android:title="@string/profile" />
         <item
             android:id="@+id/nav_left_order"
-            android:icon="@drawable/ic_cart"
+            android:icon="@drawable/ic_cart_unselect"
             android:title="@string/my_order" />
         <item
             android:id="@+id/nav_left_favorite"
-            android:icon="@drawable/ic_favorite"
+            android:icon="@drawable/ic_favorite_unselect"
             android:title="@string/favorite" />
         <item
             android:id="@+id/nav_left_delivery"
-            android:icon="@drawable/ic_bag"
+            android:icon="@drawable/ic_bag_unselect"
             android:title="@string/delivery" />
         <item
             android:id="@+id/nav_left_setting"
-            android:icon="@drawable/ic_setting"
+            android:icon="@drawable/ic_setting_unselect"
             android:title="@string/setting" />
     </group>
 </menu>

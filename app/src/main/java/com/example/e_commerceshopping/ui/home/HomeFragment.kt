@@ -3,6 +3,8 @@ package com.example.e_commerceshopping.ui.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import com.example.e_commerceshopping.R
 import com.example.e_commerceshopping.base.ui.BaseFragment
 import com.example.e_commerceshopping.databinding.FragmentHomeBinding
 import com.example.e_commerceshopping.extension.onClick
@@ -17,8 +19,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, MainActivity>() {
     override fun setupView() {
         showBottomNav(true)
 
-        binding.btnLogout.onClick {
-            popBackStack()
+        binding.apply {
+            appBar.btnNavigation.onClick {
+                drawerLayout.openDrawer(GravityCompat.START)
+            }
+
+            btnLogout.onClick {
+                popBackStack(
+                    R.id.loginFragment,
+                    false
+                )
+            }
         }
     }
 

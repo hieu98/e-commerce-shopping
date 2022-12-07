@@ -17,7 +17,7 @@ abstract class BaseActivity<B : ViewBinding> : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = onInflateView(layoutInflater)
         setContentView(binding.root)
-        window.navigationBarColor = ContextCompat.getColor(this, R.color.black)
+        //window.navigationBarColor = ContextCompat.getColor(this, R.color.black)
         loadingDialog = LoadingDialog(this)
         setupData(savedInstanceState)
     }

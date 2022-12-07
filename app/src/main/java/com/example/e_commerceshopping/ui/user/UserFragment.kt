@@ -13,11 +13,9 @@ class UserFragment : BaseFragment<FragmentUserBinding, MainActivity>() {
     ): FragmentUserBinding = FragmentUserBinding.inflate(inflater)
 
     override fun setupView() {
-        TODO("Not yet implemented")
     }
 
     override fun setupData() {
-        TODO("Not yet implemented")
     }
 
 
