@@ -12,4 +12,5 @@
     <color name="background_splash">#5956E9</color>
     <color name="colorPrimary">#0093FF</color>
     <color name="background_login">#706EFD</color>
+    <color name="text_default">#9A9A9D</color>
 </resources>
