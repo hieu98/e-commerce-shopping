@@ -20,6 +20,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, MainActivity>() {
         showBottomNav(true)
 
         binding.apply {
+            tabLayout.addTab(tabLayout.newTab().setText("Wearable"))
+            tabLayout.addTab(tabLayout.newTab().setText("Laptops"))
+            tabLayout.addTab(tabLayout.newTab().setText("Phones"))
+            tabLayout.addTab(tabLayout.newTab().setText("Drones"))
+
+            val adapter =
+
             appBar.btnNavigation.onClick {
                 drawerLayout.openDrawer(GravityCompat.START)
             }

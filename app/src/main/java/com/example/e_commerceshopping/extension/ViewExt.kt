@@ -5,7 +5,9 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
@@ -21,6 +23,8 @@ fun View.showKeyboard() {
     val imm = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
     imm.showSoftInput(this, 0)
 }
+
+inline val ViewGroup.inflater: LayoutInflater get() = LayoutInflater.from(context)
 
 fun View.visible() {
     if (visibility != View.VISIBLE) visibility = View.VISIBLE
