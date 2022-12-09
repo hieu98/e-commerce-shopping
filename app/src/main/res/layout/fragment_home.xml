@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
@@ -39,16 +40,43 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
                 style="@style/TabLayout"
+                app:layout_constraintTop_toBottomOf="@+id/title_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/title_home" />
+                app:tabTextAppearance="@style/TabTextTopStyle">
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewpager2"
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/tab_wearable"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Wearable" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/tab_laptops"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Laptops" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/tab_phones"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Phones" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:id="@+id/tab_drones"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Drones" />-->
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_product"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="60dp"
-                android:background="@color/background_splash"
+                android:layout_height="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_marginTop="50dp"
                 app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -58,7 +86,7 @@
                 android:layout_marginEnd="30dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewpager2">
+                app:layout_constraintTop_toBottomOf="@+id/rc_product">
 
                 <TextView
                     android:layout_width="wrap_content"
