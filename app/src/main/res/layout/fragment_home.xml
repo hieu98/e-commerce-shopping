@@ -45,30 +45,6 @@
                 android:layout_height="wrap_content"
                 app:tabTextAppearance="@style/TabTextTopStyle">
 
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:id="@+id/tab_wearable"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Wearable" />-->
-
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:id="@+id/tab_laptops"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Laptops" />-->
-
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:id="@+id/tab_phones"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Phones" />-->
-
-<!--                <com.google.android.material.tabs.TabItem-->
-<!--                    android:id="@+id/tab_drones"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Drones" />-->
-
             </com.google.android.material.tabs.TabLayout>
 
             <androidx.recyclerview.widget.RecyclerView

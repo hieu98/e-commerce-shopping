@@ -19,6 +19,7 @@
     <string name="delivery">Delivery</string>
     <string name="setting">Settings</string>
     <string name="signout">Sign out</string>
+    <string name="cart">Cart</string>
 
     <string name="search">Search</string>
     <string name="price">$%d</string>

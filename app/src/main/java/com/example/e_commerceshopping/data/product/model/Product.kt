@@ -12,5 +12,6 @@ data class Product (
     var image : String? = null,
     var price : Long? = null,
     var model : String? = null,
-    var type : String? = null
+    var type : String? = null,
+    var quantity : Int? = null
 ) : Parcelable
