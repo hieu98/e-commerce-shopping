@@ -1,10 +1,12 @@
 package com.example.e_commerceshopping.ui.favorite
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import com.example.e_commerceshopping.R
 import com.example.e_commerceshopping.base.ui.BaseFragment
 import com.example.e_commerceshopping.databinding.FragmentFavoriteBinding
+import com.example.e_commerceshopping.extension.onClick
 import com.example.e_commerceshopping.ui.MainActivity
 
 class FavoriteFragment : BaseFragment<FragmentFavoriteBinding, MainActivity>() {
@@ -16,6 +18,11 @@ class FavoriteFragment : BaseFragment<FragmentFavoriteBinding, MainActivity>() {
     override fun setupView() {
         binding.apply {
             header.tvTitle.setText(R.string.favorite)
+            header.btnDelete.visibility = View.GONE
+            header.ivNavigateBefore.visibility = View.GONE
+            btnStartOrder.onClick{
+                handler?.switchBottomNavTab(R.id.nav_home)
+            }
         }
     }
 
