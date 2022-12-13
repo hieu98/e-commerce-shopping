@@ -8,6 +8,7 @@
     <string name="text_login">Login</string>
     <string name="text_email">Email</string>
     <string name="text_password">Password</string>
+    <string name="text_name">Name</string>
     <string name="text_forgot">Forgot password?</string>
     <string name="text_create_account">Create account</string>
     <string name="text_signup">Sign Up</string>
@@ -20,7 +21,15 @@
     <string name="setting">Settings</string>
     <string name="signout">Sign out</string>
     <string name="cart">Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="total">Total</string>
+    <string name="history">History</string>
 
     <string name="search">Search</string>
     <string name="price">$%d</string>
+
+    <string name="start_order">Start ordering</string>
+    <string name="no_favorite">No favorites yet</string>
+    <string name="no_history">No history yet</string>
+    <string name="hit_button_order">Hit the button down\nbelow to Create an order</string>
 </resources>
