@@ -1,6 +1,5 @@
 package com.example.e_commerceshopping.ui.home
 
-import android.content.Context
 import android.view.ViewGroup
 import com.example.e_commerceshopping.R
 import com.example.e_commerceshopping.base.ui.BaseAdapter

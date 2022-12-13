@@ -174,6 +174,7 @@ abstract class BaseFragment<B : ViewBinding, A : Any?> : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        (activity as? BaseActivity<*>)?.hideLoading()
     }
 
     override fun onDestroy() {
