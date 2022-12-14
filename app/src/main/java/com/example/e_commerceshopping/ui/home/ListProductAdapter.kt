@@ -7,10 +7,12 @@ import com.example.e_commerceshopping.data.product.model.Product
 import com.example.e_commerceshopping.databinding.ItemProductBinding
 import com.example.e_commerceshopping.extension.inflater
 import com.example.e_commerceshopping.extension.loadImageFromUrl
+import com.example.e_commerceshopping.extension.onClick
 import okhttp3.internal.format
 
 class ListProductAdapter(
-    private val data: List<Product>
+    private val data: List<Product>,
+    val clickProduct: (() -> Unit)? = null
 ) : BaseAdapter<Product, ItemProductBinding>(data) {
     override fun onCreateVH(parent: ViewGroup, viewType: Int): ItemVH<ItemProductBinding> =
         ItemProductBinding.inflate(parent.inflater, parent, false).let(::ItemVH)
@@ -25,6 +27,10 @@ class ListProductAdapter(
             nameProduct.text = product.name
             modelProduct.text = product.model
             priceProduct.text = format(this.root.context.getString(R.string.price), product.price!!)
+
+            root.onClick {
+                clickProduct?.invoke()
+            }
         }
     }
 

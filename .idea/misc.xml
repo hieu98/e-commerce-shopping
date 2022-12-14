@@ -10,6 +10,7 @@
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/border_card_user.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/border_item_product.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/border_login.xml" value="0.2" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/default_dot.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_arrow.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_arrow1.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_arrow2.xml" value="0.2215" />
@@ -33,6 +34,9 @@
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_user.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_user_select.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/ic_user_unselect.xml" value="0.2215" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/select_dot.xml" value="0.2215" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/tab_selection.xml" value="0.2215" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/drawable/tab_selector.xml" value="0.2215" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout-v28/activity_main.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/app_bar.xml" value="0.31979166666666664" />
@@ -45,9 +49,11 @@
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_list_product.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_login.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_order_history.xml" value="0.32083333333333336" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_product_detail.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_sign_up.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_splash.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/fragment_user.xml" value="0.33" />
+        <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/item_detail_product.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/item_product.xml" value="0.32083333333333336" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/item_product_cart.xml" value="0.33" />
         <entry key="..\:/Users/hieutn1/AndroidStudioProjects/ECommerceShopping/app/src/main/res/layout/layout_header.xml" value="0.32083333333333336" />

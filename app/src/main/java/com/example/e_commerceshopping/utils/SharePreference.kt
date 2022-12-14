@@ -10,6 +10,7 @@ class SharePreference(
 ) {
     companion object {
         const val KEY_SPLASH = "KEY_SPLASH"
+        const val KEY_USER = "KEY_USER"
     }
 
     inline fun <reified T> save(key: String, any: T) {
