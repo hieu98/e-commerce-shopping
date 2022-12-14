@@ -1,26 +1,29 @@
 package com.example.e_commerceshopping.ui.introduce.splash
 
 import android.app.Application
+import androidx.lifecycle.MutableLiveData
 import com.example.e_commerceshopping.base.ui.BaseViewModel
 import com.example.e_commerceshopping.utils.SharePreference
+import kotlinx.coroutines.delay
 
 class SplashViewModel(
     override val app: Application,
-    val sharePreference: SharePreference
+    private val sharePreference: SharePreference
 ) : BaseViewModel(app) {
 
-    var splash: Boolean? = null
+    var user : String? = null
+    var isLogin= MutableLiveData<Boolean>()
 
     init {
-        checkSplash()
+        getUser()
     }
 
-    fun checkSplash() : Boolean{
-        splash = sharePreference.get<Boolean>(SharePreference.KEY_SPLASH)
-        return splash ?: false
+    private fun getUser() {
+        jobCall = launchJob {
+            delay(2000)
+            user = sharePreference.get<String>(SharePreference.KEY_USER)
+            isLogin.postValue(!user.isNullOrEmpty())
+        }
     }
 
-    fun passSplash(){
-        sharePreference.save(SharePreference.KEY_SPLASH, true)
-    }
 }

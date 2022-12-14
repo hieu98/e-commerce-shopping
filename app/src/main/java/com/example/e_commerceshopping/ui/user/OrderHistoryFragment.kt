@@ -17,6 +17,7 @@ class OrderHistoryFragment : BaseFragment<FragmentOrderHistoryBinding, MainActiv
     ): FragmentOrderHistoryBinding = FragmentOrderHistoryBinding.inflate(inflater)
 
     override fun setupView() {
+        showBottomNav(false)
         binding.apply {
             header.tvTitle.setText(R.string.history)
             header.btnDelete.visibility = View.GONE

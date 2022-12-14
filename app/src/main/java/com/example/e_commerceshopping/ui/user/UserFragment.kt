@@ -16,6 +16,7 @@ class UserFragment : BaseFragment<FragmentUserBinding, MainActivity>() {
     ): FragmentUserBinding = FragmentUserBinding.inflate(inflater)
 
     override fun setupView() {
+        showBottomNav(true)
         binding.apply {
             header.tvTitle.setText(R.string.profile)
             header.btnDelete.visibility = View.GONE

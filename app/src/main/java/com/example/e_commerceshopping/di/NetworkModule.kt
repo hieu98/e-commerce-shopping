@@ -1,5 +1,6 @@
 package com.example.e_commerceshopping.di
 
+import com.google.gson.Gson
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.Interceptor
@@ -12,6 +13,8 @@ import java.util.concurrent.TimeUnit
 
 val networkModule =  module {
     single(createdAtStart = true) { createOkHttpClient() }
+    factory { createConverterFactory() }
+    single { Gson() }
 }
 
 private fun createOkHttpClient(): OkHttpClient {

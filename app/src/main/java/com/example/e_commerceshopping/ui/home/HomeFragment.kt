@@ -12,10 +12,12 @@ import com.example.e_commerceshopping.databinding.FragmentHomeBinding
 import com.example.e_commerceshopping.extension.onClick
 import com.example.e_commerceshopping.ui.MainActivity
 import com.google.android.material.tabs.TabLayout
+import org.koin.android.ext.android.inject
 
 class HomeFragment : BaseFragment<FragmentHomeBinding, MainActivity>() {
 
-    private val productAdapter = ListProductAdapter(listOf())
+    private val productAdapter = ListProductAdapter(listOf(), ::clickProduct)
+    private val viewModel : HomeViewModel by inject()
 
     override fun onInflateView(
         inflater: LayoutInflater,
@@ -62,15 +64,24 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, MainActivity>() {
             }
 
             btnLogout.onClick {
-                popBackStack(
-                    R.id.loginFragment,
-                    false
+                viewModel.logOut()
+                navigateTo(
+                    R.id.loginFragment
                 )
             }
         }
     }
 
     override fun setupData() {
+    }
+
+    private fun clickProduct() {
+        navigateTo(
+            R.id.action_homeFragment_to_productDetailFragment,
+            null,
+            R.id.nav_home,
+            false
+        )
     }
 
 }
