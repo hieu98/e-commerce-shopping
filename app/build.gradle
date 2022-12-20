@@ -184,6 +184,11 @@ dependencies {
      * Material View Pager Dots Indicator
      */
     implementation 'com.tbuonomo:dotsindicator:4.3'
+
+    /**
+     * PayPal Android SDK
+     */
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'

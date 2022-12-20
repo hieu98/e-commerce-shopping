@@ -71,34 +71,64 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txt_product_name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
-            <RadioGroup
-
-                android:gravity="center"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:focusable="true"
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_color"
+                android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/txt_color"
                 android:layout_width="match_parent"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/title_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Get Apple TV + free for a year"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rc_color" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:paddingEnd="20dp"
+                android:text="Available when you purchase any new iPhone, iPad, iPod Touch, Mac or Apple TV, £4.99/month after free trial."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_description"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btn_full_description"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:button="@drawable/ic_user"
+                <TextView
+                    android:text="Full description"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/background_splash"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
 
-                <RadioButton
-                    android:button="@drawable/ic_user"
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_next1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:button="@drawable/ic_user"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RadioGroup>
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
