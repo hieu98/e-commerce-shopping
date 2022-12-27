@@ -29,7 +29,6 @@ class SearchFragment : BaseFragment<FragmentSearchBinding, MainActivity>() {
             
             appBar.searchLayout.searchView.isFocusable = true
 
-            txtResultFound.text = productAdapter.itemCount.toString()
             rcProductFound.adapter = productAdapter
             rcProductFound.layoutManager = GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
             productAdapter.clear()

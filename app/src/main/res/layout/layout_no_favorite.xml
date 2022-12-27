@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_no_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_no_favorite"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_no_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_favorite"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_no_favorite" />
+
+    <TextView
+        android:id="@+id/txt_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="@string/hit_button_order"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_no_favorite" />
+
+    <Button
+        android:id="@+id/btn_start_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_start_ordering"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="15dp"
+        android:text="@string/start_order"
+        android:layout_marginBottom="50dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="17sp"
+        android:layout_marginTop="29dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_des" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
