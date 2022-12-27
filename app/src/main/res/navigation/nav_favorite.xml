@@ -9,5 +9,14 @@
         android:id="@+id/favoriteFragment"
         android:name="com.example.e_commerceshopping.ui.favorite.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_productDetailFragment22"
+            app:destination="@id/productDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment2"
+        android:name="com.example.e_commerceshopping.ui.home.productdetail.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" />
 </navigation>

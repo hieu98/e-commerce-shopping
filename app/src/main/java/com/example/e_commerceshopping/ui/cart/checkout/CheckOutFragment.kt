@@ -22,6 +22,9 @@ class CheckOutFragment : BaseFragment<FragmentCheckOutBinding, MainActivity>() {
             header.btnDelete.visibility = View.GONE
 
             header.ivNavigateBefore.onClick { popBackStack() }
+            btnChange.onClick {
+
+            }
         }
     }
 
