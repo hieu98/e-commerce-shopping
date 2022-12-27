@@ -43,7 +43,15 @@ class ProductDetailFragment : BaseFragment<FragmentProductDetailBinding, MainAct
                 popBackStack()
             }
             viewpager2.adapter = detailAdapter
-            detailAdapter.submitList(listOf(R.drawable.img_no_favorite, R.drawable.img_no_favorite, R.drawable.img_no_favorite, R.drawable.img_no_favorite, R.drawable.img_no_favorite))
+            detailAdapter.submitList(
+                listOf(
+                    R.drawable.img_no_favorite,
+                    R.drawable.img_no_favorite,
+                    R.drawable.img_no_favorite,
+                    R.drawable.img_no_favorite,
+                    R.drawable.img_no_favorite
+                )
+            )
             wormDot.attachTo(viewpager2)
         }
     }

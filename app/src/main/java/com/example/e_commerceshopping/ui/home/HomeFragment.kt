@@ -2,7 +2,6 @@ package com.example.e_commerceshopping.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.e_commerceshopping.R
@@ -69,6 +68,16 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, MainActivity>() {
                     R.id.loginFragment
                 )
             }
+
+            appBar.searchLayout.searchIcon.onClick {
+                navigateTo(
+                    R.id.action_homeFragment_to_searchFragment,
+                    null,
+                    R.id.nav_home,
+                    false
+                )
+            }
+
         }
     }
 

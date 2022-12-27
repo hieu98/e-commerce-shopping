@@ -10,9 +10,9 @@ import com.example.e_commerceshopping.extension.loadImageFromUrl
 import com.example.e_commerceshopping.extension.onClick
 import okhttp3.internal.format
 
-class ListProductAdapter(
-    private val data: List<Product>,
-    val clickProduct: (() -> Unit)? = null
+open class ListProductAdapter(
+    data: List<Product>,
+    private val clickProduct: (() -> Unit)? = null
 ) : BaseAdapter<Product, ItemProductBinding>(data) {
     override fun onCreateVH(parent: ViewGroup, viewType: Int): ItemVH<ItemProductBinding> =
         ItemProductBinding.inflate(parent.inflater, parent, false).let(::ItemVH)

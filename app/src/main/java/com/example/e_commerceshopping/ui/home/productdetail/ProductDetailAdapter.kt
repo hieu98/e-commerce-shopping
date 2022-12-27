@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.e_commerceshopping.databinding.ItemDetailProductBinding
 import com.example.e_commerceshopping.extension.inflater
 
-class ProductDetailAdapter () : ListAdapter<Int, RecyclerView.ViewHolder>(
+class ProductDetailAdapter : ListAdapter<Int, RecyclerView.ViewHolder>(
     object : DiffUtil.ItemCallback<Int>(){
         override fun areItemsTheSame(oldItem: Int, newItem: Int) = oldItem == newItem
 
