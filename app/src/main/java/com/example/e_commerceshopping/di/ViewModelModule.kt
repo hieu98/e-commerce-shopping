@@ -5,6 +5,7 @@ import com.example.e_commerceshopping.ui.cart.checkout.CheckOutViewModel
 import com.example.e_commerceshopping.ui.favorite.FavoriteViewModel
 import com.example.e_commerceshopping.ui.home.HomeViewModel
 import com.example.e_commerceshopping.ui.home.productdetail.ProductDetailViewModel
+import com.example.e_commerceshopping.ui.home.search.SearchViewModel
 import com.example.e_commerceshopping.ui.introduce.login.LoginViewModel
 import com.example.e_commerceshopping.ui.introduce.splash.SplashViewModel
 import com.example.e_commerceshopping.ui.user.UserViewModel
@@ -20,4 +21,5 @@ val viewModelModule = module {
     viewModel { UserViewModel(get()) }
     viewModel { CheckOutViewModel(get()) }
     viewModel { ProductDetailViewModel(get()) }
+    viewModel { SearchViewModel(get()) }
 }

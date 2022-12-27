@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginEnd="-60dp"
+        android:src="@drawable/img_item_not_found"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_item_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/img_item_not_found"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Item not found"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:id="@+id/txt_item_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingHorizontal="40dp"
+        android:textSize="17sp"
+        android:text="Try a more generic search term or try looking for attemative products."
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_not_found"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
