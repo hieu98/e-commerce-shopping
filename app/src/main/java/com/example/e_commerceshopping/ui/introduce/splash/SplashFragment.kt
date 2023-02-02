@@ -6,7 +6,6 @@ import com.example.e_commerceshopping.R
 import com.example.e_commerceshopping.base.ui.BaseFragment
 import com.example.e_commerceshopping.databinding.FragmentSplashBinding
 import com.example.e_commerceshopping.ui.MainActivity
-import kotlinx.coroutines.delay
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SplashFragment : BaseFragment<FragmentSplashBinding, MainActivity>() {

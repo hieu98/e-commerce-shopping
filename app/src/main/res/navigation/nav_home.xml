@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listProductByTypeFragment"
+            app:destination="@id/listProductByTypeFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -64,4 +67,9 @@
             android:id="@+id/action_searchFragment_to_productDetailFragment"
             app:destination="@id/productDetailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/listProductByTypeFragment"
+        android:name="com.example.e_commerceshopping.ui.home.listproductbytype.ListProductByTypeFragment"
+        android:label="fragment_list_product_by_type"
+        tools:layout="@layout/fragment_list_product_by_type" />
 </navigation>
